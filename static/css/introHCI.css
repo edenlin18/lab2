@@ -14,6 +14,7 @@
 body {
      border: 1px dotted gray;
      padding: 20px;
+     background-color: #414141
 }
 
 .jumbotron {
@@ -23,7 +24,6 @@ body {
 
 .jumbotron:after {
      content:"";
-     background: url("http://lorempixel.com/1140/283");
      opacity: 0.2;
      top: 0;
      left: 0;
@@ -31,4 +31,15 @@ body {
      right: 0;
      position: absolute;
      z-index: -1;	
+}
+
+.thumbnails {
+     padding: 0px;
+     text-align: center;
+}
+
+.thumbnails > li {
+     display: inline-block;
+     *display:inline; /* ie7 fix */
+     float: none; /* this is the part that makes it work */
 }
